@@ -3,9 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    height: 746px;
+    width: 100%;
+    background-color: #276b9d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper{
+    height: 690px;
+    width: 70%;
+    background-color:white;
+    display: block;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 10px 10px 30px rgba(9, 7, 16, 0.5);
+    border-radius: 15px;
+}
+
+.header{
+    height: 90px;
+    width: 100%;
+    /* background-color:rgb(14, 0, 210); */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.main-logo img{
+    height: 89px;
+    width: 89px;
+    margin-left: 30px;
+    margin-top: 3px;
+}
+
+.main-nav{
+    height: 50px;
+    width: 70%;
+    /* background-color:rgb(210, 189, 0);  */
+    border-right: 5px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px;
+    margin-top: 5px;
+    margin-right: 40px;
+}
+
+.search img{
+    height: 30px;
+    width: 30px;
+    margin-left: -45px;
+    margin-right: 25px;
+}
+
+.main-nav a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 15px;
+ 
+  margin: 0 ;
+
+}
+
+#now{
+    color: red;
+}
+
+
+    </style>
 </head>
 <body>
-    <h1>This is my website</h1>
+<div class="container">
+    <div class="wrapper">
+        <div class="header">
+            <div class="main-logo">
+                <img src="images/logo.jpg" alt="">
+            </div>
+            <div class="main-nav">
+                <a href="#" >CLOTHING</a>
+                <a href="#"id="now">FOOTHWEAR</a>
+                <a href="#">ACCESSORIES</a>
+                <a href="#">MY ACCOUNT</a>
+                <a href="#">CART(0)</a>
+            </div>
+            <div class="search">
+                <img src="images/search icon.png" alt="">
+            </div>
+        </div>
+        <div class="content"></div>
+    </div>
+</div>
+    
 </body>
 </html>
